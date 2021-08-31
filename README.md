@@ -10,7 +10,7 @@
 
 ## 二、使用步骤
 ### 1.引入库
-1.1 使用 HBuilder X 新建 uni-app 项目，并选择 Hello uni-app 模版。
+#### 1.1 使用 HBuilder X 新建 uni-app 项目，并选择 Hello uni-app 模版。
 
 
 
@@ -23,7 +23,7 @@
 ![image](https://user-images.githubusercontent.com/22392094/131482511-8d0ae07d-8119-4f14-9a7e-6a8132426d06.png)
 
 
-1.2 前往 Echarts 官网[在线构建所需图标、坐标系、组件进行打包下载](https://echarts.apache.org/zh/builder.html)，由于本文是绘制雷达图，所以只需勾选雷达图即可。
+#### 1.2 前往 Echarts 官网[在线构建所需图标、坐标系、组件进行打包下载](https://echarts.apache.org/zh/builder.html)，由于本文是绘制雷达图，所以只需勾选雷达图即可。
 
 
 
@@ -37,7 +37,7 @@
  ![image](https://user-images.githubusercontent.com/22392094/131482683-a505752c-1e2a-4ae3-9118-1325829d170a.png)
 
 
-1.3 在 index.vue 里引入 js 文件和 mpvueEcharts 组件，并且进行组件注册。
+#### 1.3 在 index.vue 里引入 js 文件和 mpvueEcharts 组件，并且进行组件注册。
 ```
 <script>
 	import * as echarts from '../../components/echarts/echarts.min.js'
@@ -65,7 +65,7 @@
 至此，我们已经完成了 uni-app 项目中引入 ECharts 插件的步骤，接下来开始使用插件绘制雷达图。
 
 ### 2.ECharts绘制雷达图
- 2.1 给雷达图创建一个父容器 charts-box，并设置宽高
+#### 2.1 给雷达图创建一个父容器 charts-box，并设置宽高
 ```
 <template>
 	<view class="content">
@@ -115,7 +115,7 @@ methods: {
 			},
 		}
 ```
-2.2 配置 ECharts 数据，这里Joe大叔已经准备了一个雷达图的配置数据，直接展现给大家。
+#### 2.2 配置 ECharts 数据，这里Joe大叔已经准备了一个雷达图的配置数据，直接展现给大家。
 ```
 data() {
 			return {
@@ -220,7 +220,7 @@ seris-radar.data.symbol：雷达图的单个数据标记的图形。（如果设
 
 seris-radar.data.value：雷达图的单个数据的数值。（雷达图最终渲染效果就是由这个值来确定的，radar.indicator 里的 max 是 value 的最大取值，这里需要注意一下）
 
-2.3 编译项目，进行雷达图绘制。
+#### 2.3 编译项目，进行雷达图绘制。
 ![image](https://user-images.githubusercontent.com/22392094/131482763-9c8547b9-90c3-4296-9524-c65def9e8d72.png)
 
 
