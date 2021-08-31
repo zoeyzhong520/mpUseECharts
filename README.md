@@ -6,7 +6,7 @@
 不过本篇文章Joe大叔将要带领大家一步步的在微信小程序中使用 ECharts 成功绘制出雷达图，接下来我们就开始吧！
 
 ## 一、微信小程序如何接入 ECharts？​​​​​​​
-这里要区分两种情况：一是原生微信小程序开发，这里Joe大叔推荐大家直接访问 在微信小程序中使用ECharts，因为是官方文档，只需要按照操作步骤即可。二是 uni-app 开发微信小程序，下面我将展示使用 uni-app项目 绘制雷达图。
+这里要区分两种情况：一是原生微信小程序开发，这里Joe大叔推荐大家直接访问 [在微信小程序中使用ECharts](https://echarts.apache.org/zh/tutorial.html#%E5%9C%A8%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E4%B8%AD%E4%BD%BF%E7%94%A8%20ECharts)，因为是官方文档，只需要按照操作步骤即可。二是 uni-app 开发微信小程序，下面我将展示使用 uni-app项目 绘制雷达图。
 
 ## 二、使用步骤
 ### 1.引入库
@@ -23,7 +23,7 @@
 ![image](https://user-images.githubusercontent.com/22392094/131482511-8d0ae07d-8119-4f14-9a7e-6a8132426d06.png)
 
 
-1.2 前往 Echarts 官网在线构建所需图标、坐标系、组件进行打包下载，由于本文是绘制雷达图，所以只需勾选雷达图即可。
+1.2 前往 Echarts 官网[在线构建所需图标、坐标系、组件进行打包下载](https://echarts.apache.org/zh/builder.html)，由于本文是绘制雷达图，所以只需勾选雷达图即可。
 
 
 
@@ -204,7 +204,7 @@ data() {
 			}
 		},
 ```
-在这里简要说明一下几个主要配置字段，更多详细内容可以直接访问 ECharts 配置项进行查阅。
+在这里简要说明一下几个主要配置字段，更多详细内容可以直接访问 [ECharts 配置项](https://echarts.apache.org/zh/option.html#title)进行查阅。
 
 radar.axisLine：坐标轴轴线相关设置。
 
@@ -224,12 +224,12 @@ seris-radar.data.value：雷达图的单个数据的数值。（雷达图最终�
 ![image](https://user-images.githubusercontent.com/22392094/131482763-9c8547b9-90c3-4296-9524-c65def9e8d72.png)
 
 
-看完本文、跟随步骤后，一个漂亮的雷达图就呈现在眼前了，大家是不是也都跃跃欲试了呢？ECharts 示例提供了各式各样漂亮的图表，足以满足各项要求，可以依据兴趣分别尝试下各个图表。
+看完本文、跟随步骤后，一个漂亮的雷达图就呈现在眼前了，大家是不是也都跃跃欲试了呢？[ECharts 示例](https://echarts.apache.org/examples/zh/index.html)提供了各式各样漂亮的图表，足以满足各项要求，可以依据兴趣分别尝试下各个图表。
 
 
 
 ## 总结
-在本篇文章中，Joe大叔和大家一起构建项目、引入 ECharts 插件、使用插件绘制图表，最终完成了达到预期效果的雷达图。当然，微信小程序在使用 ECharts 时，也存在 canvas 层级过高的问题。处理这个问题有两种方案：一是使用 cover-view、cover-image 覆盖在图标上面；二是使用 canvas 生成图片（uni.canvasToTempFilePath(object, component），然后把图片展示出来，并且对 canvas 组件使用 position: absolute;left: -670rpx;right: -440rpx; 的布局方式将其隐藏在屏幕外。
+在本篇文章中，Joe大叔和大家一起构建项目、引入 ECharts 插件、使用插件绘制图表，最终完成了达到预期效果的雷达图。当然，微信小程序在使用 ECharts 时，也存在 canvas 层级过高的问题。处理这个问题有两种方案：一是使用[cover-view、cover-image](https://uniapp.dcloud.io/component/cover-view?id=cover-view) 覆盖在图标上面；二是使用 canvas 生成图片[（uni.canvasToTempFilePath(object, component）](https://uniapp.dcloud.io/api/canvas/canvasToTempFilePath)，然后把图片展示出来，并且对 canvas 组件使用 position: absolute;left: -670rpx;right: -440rpx; 的布局方式将其隐藏在屏幕外。
 
 最后很感谢能看到文末的朋友们，我们下期再见！
 
