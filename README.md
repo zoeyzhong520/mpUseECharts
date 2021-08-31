@@ -206,19 +206,19 @@ data() {
 ```
 在这里简要说明一下几个主要配置字段，更多详细内容可以直接访问 [ECharts 配置项](https://echarts.apache.org/zh/option.html#title)进行查阅。
 
-radar.axisLine：坐标轴轴线相关设置。
+**radar.axisLine**：坐标轴轴线相关设置。
 
-radar.name：雷达图每个指示器名称的配置项。
+**radar.name**：雷达图每个指示器名称的配置项。
 
-radar.splitArea：坐标轴在 grid 区域中的分割区域，默认不显示。
+**radar.splitArea**：坐标轴在 grid 区域中的分割区域，默认不显示。
 
-radar.splitLine：坐标轴在 grid 区域中的分隔线。
+**radar.splitLine**：坐标轴在 grid 区域中的分隔线。
 
-radar.splitNumber：指示器轴的分割段数。（如果设为0，就只会展示一层雷达图背景）
+**radar.splitNumber**：指示器轴的分割段数。（如果设为0，就只会展示一层雷达图背景）
 
-seris-radar.data.symbol：雷达图的单个数据标记的图形。（如果设为none，就不会展示单个数据项的标记图形，默认是circle小圆点）
+**seris-radar.data.symbol**：雷达图的单个数据标记的图形。（如果设为none，就不会展示单个数据项的标记图形，默认是circle小圆点）
 
-seris-radar.data.value：雷达图的单个数据的数值。（雷达图最终渲染效果就是由这个值来确定的，radar.indicator 里的 max 是 value 的最大取值，这里需要注意一下）
+**seris-radar.data.value*：雷达图的单个数据的数值。（雷达图最终渲染效果就是由这个值来确定的，radar.indicator 里的 max 是 value 的最大取值，这里需要注意一下）
 
 #### 2.3 编译项目，进行雷达图绘制。
 ![image](https://user-images.githubusercontent.com/22392094/131482763-9c8547b9-90c3-4296-9524-c65def9e8d72.png)
