@@ -1,0 +1,1 @@
+<view class="content"><view class="charts-box"><mpvue-echarts class="vue-ref" vue-id="8dd740cc-1" canvasId="radar" data-ref="lineChart" data-event-opts="{{[['^onInit',[['lineInit']]]]}}" bind:onInit="__e" bind:__l="__l"></mpvue-echarts></view></view>
